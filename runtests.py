@@ -9,6 +9,7 @@ if not settings.configured:
         DATABASES = {
             'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': ':memory:',},
         },
+        SITE_ID = 1,
         TEMPLATE_LOADERS = (
             'django.template.loaders.app_directories.Loader',
         ),
@@ -18,6 +19,7 @@ if not settings.configured:
         INSTALLED_APPS = (
             'django.contrib.contenttypes',
             'django.contrib.auth',
+            'django.contrib.sites',
             'fluent_contents',
             'fluentcms_pager',
             'fluentcms_pager.tests',
