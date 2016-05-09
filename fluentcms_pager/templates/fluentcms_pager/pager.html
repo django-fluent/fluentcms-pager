@@ -1,0 +1,7 @@
+{# based on http://getbootstrap.com/components/#pagination-pager #}
+<nav>
+  <ul class="pager">
+    {% if previous_url %}<li class="previous"><a href="{{ previous_url }}">{% if show_arrows %}<span aria-hidden="true">&larr;</span> {% endif %}{{ previous_title }}</a></li>{% endif %}
+    {% if next_url %}<li class="next"><a href="{{ next_url }}">{{ next_title }}{% if show_arrows %} <span aria-hidden="true">&rarr;</span>{% endif %}</a></li>{% endif %}
+  </ul>
+</nav>

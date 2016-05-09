@@ -1,0 +1,6 @@
+include AUTHORS
+include README.rst
+include LICENSE
+recursive-include fluentcms_pager/locale *.po *.mo
+recursive-include fluentcms_pager/static *.css *.js
+recursive-include fluentcms_pager/templates *.html

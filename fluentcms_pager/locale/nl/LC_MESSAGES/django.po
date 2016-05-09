@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-09 21:16+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Diederik van der Boor <vdboor@edoburu.nl>\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: content_plugins.py:14
+msgid "Navigation"
+msgstr "Navigatie"
+
+#: content_plugins.py:18
+msgid "Previous link"
+msgstr "Vorige link"
+
+#: content_plugins.py:21
+msgid "Next link"
+msgstr "Volgende link"
+
+#: models.py:16
+msgid "Show arrows"
+msgstr "Toon pijtjes"
+
+#: models.py:17
+msgid "Show previous link"
+msgstr "Toon vorige link"
+
+#: models.py:18
+msgid "Show next link"
+msgstr "Toon volgende link"
+
+#: models.py:19
+msgid "Title previous link"
+msgstr "Titel vorige link"
+
+#: models.py:20
+msgid "URL previous link"
+msgstr "URL vorige link"
+
+#: models.py:21
+msgid "Title next link"
+msgstr "Titel volgende link"
+
+#: models.py:22
+msgid "URL next link"
+msgstr "URL volgende link"
+
+#: models.py:25
+msgid "Pager"
+msgstr "Pager (vorige/volgende)"
+
+#: models.py:26
+msgid "Pagers"
+msgstr "Pagers"
+
+#: models.py:29
+msgid "Previous"
+msgstr "Vorige"
+
+#: models.py:29
+msgid "Next"
+msgstr "Volgende"
