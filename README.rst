@@ -5,8 +5,6 @@ fluentcms-pager
     :target: http://travis-ci.org/edoburu/fluentcms-pager
 .. image:: https://img.shields.io/pypi/v/fluentcms-pager.svg
     :target: https://pypi.python.org/pypi/fluentcms-pager/
-.. image:: https://img.shields.io/pypi/dm/fluentcms-pager.svg
-    :target: https://pypi.python.org/pypi/fluentcms-pager/
 .. image:: https://img.shields.io/badge/wheel-yes-green.svg
     :target: https://pypi.python.org/pypi/fluentcms-pager/
 .. image:: https://img.shields.io/pypi/l/fluentcms-pager.svg
