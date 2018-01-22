@@ -38,7 +38,7 @@ if not settings.configured:
                 },
             },
         ],
-        MIDDLEWARE_CLASSES = (),
+        MIDDLEWARE = (),
         FLUENT_CONTENTS_CACHE_OUTPUT = False,
         TEST_RUNNER = 'django.test.runner.DiscoverRunner',
     )
