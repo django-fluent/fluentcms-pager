@@ -39,10 +39,10 @@ setup(
     license='Apache 2.0',
 
     install_requires=[
-        'django-fluent-contents>=1.0.2',
+        'django-fluent-contents>=2.0',
     ],
     requires=[
-        'Django (>=1.7)',
+        'Django (>=1.10)',
     ],
 
     description='Bootstrap 3 Pager element for django-fluent-contents',
@@ -68,11 +68,13 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
         'Framework :: Django',
-        'Framework :: Django :: 1.7',
-        'Framework :: Django :: 1.8',
-        'Framework :: Django :: 1.9',
+        'Framework :: Django :: 1.10',
+        'Framework :: Django :: 1.11',
+        'Framework :: Django :: 2.0',
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
         'Topic :: Software Development :: Libraries :: Python Modules',

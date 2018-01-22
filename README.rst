@@ -1,16 +1,16 @@
 fluentcms-pager
 ===============
 
-.. image:: https://img.shields.io/travis/edoburu/fluentcms-pager/master.svg?branch=master
-    :target: http://travis-ci.org/edoburu/fluentcms-pager
+.. image:: https://img.shields.io/travis/django-fluent/fluentcms-pager/master.svg?branch=master
+    :target: http://travis-ci.org/django-fluent/fluentcms-pager
 .. image:: https://img.shields.io/pypi/v/fluentcms-pager.svg
     :target: https://pypi.python.org/pypi/fluentcms-pager/
 .. image:: https://img.shields.io/badge/wheel-yes-green.svg
     :target: https://pypi.python.org/pypi/fluentcms-pager/
 .. image:: https://img.shields.io/pypi/l/fluentcms-pager.svg
     :target: https://pypi.python.org/pypi/fluentcms-pager/
-.. image:: https://img.shields.io/codecov/c/github/edoburu/fluentcms-pager/master.svg
-    :target: https://codecov.io/github/edoburu/fluentcms-pager?branch=master
+.. image:: https://img.shields.io/codecov/c/github/django-fluent/fluentcms-pager/master.svg
+    :target: https://codecov.io/github/django-fluent/fluentcms-pager?branch=master
 
 Displaying a Bootstrap 3 pager_ in a page
 
