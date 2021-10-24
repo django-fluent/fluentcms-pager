@@ -1,8 +1,8 @@
 from django.conf import settings
 from django.db import models
-from django.utils.encoding import python_2_unicode_compatible, force_text
+from django.utils.encoding import force_str
 from django.utils.functional import cached_property
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from fluent_contents.extensions import PluginUrlField
 from fluent_contents.models import ContentItem
@@ -10,7 +10,6 @@ from fluent_contents.models import ContentItem
 USE_ANY_URL_FIELD = 'any_urlfield' in settings.INSTALLED_APPS
 
 
-@python_2_unicode_compatible
 class PagerItem(ContentItem):
     """
     Pager item, to show a previous/next page.
@@ -29,11 +28,11 @@ class PagerItem(ContentItem):
         verbose_name_plural = _("Pagers")
 
     def __str__(self):
-        return u"{0} / {1}".format(self.previous_title, self.next_title)
+        return f"{self.previous_title} / {self.next_title}"
 
     def get_previous_url(self):
         if self.previous_url:
-            return force_text(self.previous_url)
+            return force_str(self.previous_url)
         else:
             page = self.previous_parent_sibling
             return page.get_absolute_url() if page is not None else None
@@ -47,11 +46,11 @@ class PagerItem(ContentItem):
         else:
             page = self.previous_parent_sibling
 
-        return force_text(page) if page is not None else _("Previous")
+        return force_str(page) if page is not None else _("Previous")
 
     def get_next_url(self):
         if self.next_url:
-            return force_text(self.next_url)
+            return force_str(self.next_url)
         else:
             page = self.next_parent_sibling
             return page.get_absolute_url() if page is not None else None
@@ -65,7 +64,7 @@ class PagerItem(ContentItem):
         else:
             page = self.next_parent_sibling
 
-        return force_text(page) if page is not None else _("Next")
+        return force_str(page) if page is not None else _("Next")
 
     @cached_property
     def previous_parent_sibling(self):

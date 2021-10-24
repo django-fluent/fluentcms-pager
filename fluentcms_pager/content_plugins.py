@@ -1,7 +1,7 @@
 """
 Definition of the plugin.
 """
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from fluent_contents.extensions import ContentPlugin, plugin_pool
 from .models import PagerItem
 
@@ -32,7 +32,7 @@ class PagerPlugin(ContentPlugin):
         )
 
     def get_context(self, request, instance, **kwargs):
-        context = super(PagerPlugin, self).get_context(request, instance, **kwargs)
+        context = super().get_context(request, instance, **kwargs)
         show_next = instance.show_next
         show_previous = instance.show_previous
         context.update({

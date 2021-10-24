@@ -1,9 +1,7 @@
 from django.db import models
-from django.utils.encoding import python_2_unicode_compatible
 from fluent_contents.models import PlaceholderField
 
 
-@python_2_unicode_compatible
 class ExamplePage(models.Model):
     slug = models.SlugField()
     position = models.IntegerField()
@@ -17,7 +15,7 @@ class ExamplePage(models.Model):
         return self.slug
 
     def get_absolute_url(self):
-        return '/foo/{0}/'.format(self.slug)
+        return f'/foo/{self.slug}/'
 
     def get_previous_sibling(self):
         # Simulate API of django-mptt
