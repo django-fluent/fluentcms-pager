@@ -23,6 +23,7 @@ if not settings.configured:
             "fluentcms_pager",
             "fluentcms_pager.tests",
         ),
+        MIDDLEWARE=(),
         TEMPLATES=[
             {
                 "BACKEND": "django.template.backends.django.DjangoTemplates",
@@ -43,9 +44,9 @@ if not settings.configured:
                 },
             },
         ],
-        MIDDLEWARE=(),
-        FLUENT_CONTENTS_CACHE_OUTPUT=False,
+        DEFAULT_AUTO_FIELD="django.db.models.BigAutoField",
         TEST_RUNNER="django.test.runner.DiscoverRunner",
+        FLUENT_CONTENTS_CACHE_OUTPUT=False,
     )
 
 DEFAULT_TEST_APPS = [
