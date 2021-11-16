@@ -3,11 +3,10 @@ from django.db import models
 from django.utils.encoding import force_str
 from django.utils.functional import cached_property
 from django.utils.translation import gettext_lazy as _
-
 from fluent_contents.extensions import PluginUrlField
 from fluent_contents.models import ContentItem
 
-USE_ANY_URL_FIELD = 'any_urlfield' in settings.INSTALLED_APPS
+USE_ANY_URL_FIELD = "any_urlfield" in settings.INSTALLED_APPS
 
 
 class PagerItem(ContentItem):
@@ -15,10 +14,13 @@ class PagerItem(ContentItem):
     Pager item, to show a previous/next page.
     The pages are auto determined, but can be overwritten
     """
+
     show_arrows = models.BooleanField(_("Show arrows"), default=True, blank=True)
     show_previous = models.BooleanField(_("Show previous link"), default=True, blank=True)
     show_next = models.BooleanField(_("Show next link"), default=True, blank=True)
-    previous_title = models.CharField(_("Title previous link"), max_length=200, blank=True, null=True)
+    previous_title = models.CharField(
+        _("Title previous link"), max_length=200, blank=True, null=True
+    )
     previous_url = PluginUrlField(_("URL previous link"), blank=True, null=True)
     next_title = models.CharField(_("Title next link"), max_length=200, blank=True, null=True)
     next_url = PluginUrlField(_("URL next link"), blank=True, null=True)
