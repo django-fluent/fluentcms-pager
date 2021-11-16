@@ -1,11 +1,9 @@
 fluentcms-pager
 ===============
 
-.. image:: https://img.shields.io/travis/django-fluent/fluentcms-pager/master.svg?branch=master
-    :target: http://travis-ci.org/django-fluent/fluentcms-pager
+.. image:: https://github.com/django-fluent/fluentcms-pager/actions/workflows/tests.yaml/badge.svg?branch=master
+    :target: https://github.com/django-fluent/fluentcms-pager/actions/workflows/tests.yaml
 .. image:: https://img.shields.io/pypi/v/fluentcms-pager.svg
-    :target: https://pypi.python.org/pypi/fluentcms-pager/
-.. image:: https://img.shields.io/badge/wheel-yes-green.svg
     :target: https://pypi.python.org/pypi/fluentcms-pager/
 .. image:: https://img.shields.io/pypi/l/fluentcms-pager.svg
     :target: https://pypi.python.org/pypi/fluentcms-pager/
